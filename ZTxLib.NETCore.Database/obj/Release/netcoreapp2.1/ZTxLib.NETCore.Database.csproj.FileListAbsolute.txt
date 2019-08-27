@@ -1,0 +1,9 @@
+E:\..NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore.Database\bin\Release\netcoreapp2.1\ZTxLib.NETCore.Database.deps.json
+E:\..NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore.Database\bin\Release\netcoreapp2.1\ZTxLib.NETCore.Database.dll
+E:\..NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore.Database\bin\Release\netcoreapp2.1\ZTxLib.NETCore.Database.pdb
+E:\..NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore.Database\obj\Release\netcoreapp2.1\ZTxLib.NETCore.Database.csprojAssemblyReference.cache
+E:\..NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore.Database\obj\Release\netcoreapp2.1\ZTxLib.NETCore.Database.csproj.CoreCompileInputs.cache
+E:\..NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore.Database\obj\Release\netcoreapp2.1\ZTxLib.NETCore.Database.AssemblyInfoInputs.cache
+E:\..NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore.Database\obj\Release\netcoreapp2.1\ZTxLib.NETCore.Database.AssemblyInfo.cs
+E:\..NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore.Database\obj\Release\netcoreapp2.1\ZTxLib.NETCore.Database.dll
+E:\..NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore.Database\obj\Release\netcoreapp2.1\ZTxLib.NETCore.Database.pdb

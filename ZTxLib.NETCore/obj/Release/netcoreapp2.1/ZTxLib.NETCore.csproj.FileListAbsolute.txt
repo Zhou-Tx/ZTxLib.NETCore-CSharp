@@ -1,0 +1,9 @@
+E:\..NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore\bin\Release\netcoreapp2.1\ZTxLib.NETCore.deps.json
+E:\..NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore\bin\Release\netcoreapp2.1\ZTxLib.NETCore.dll
+E:\..NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore\bin\Release\netcoreapp2.1\ZTxLib.NETCore.pdb
+E:\..NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore\obj\Release\netcoreapp2.1\ZTxLib.NETCore.csproj.CoreCompileInputs.cache
+E:\..NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore\obj\Release\netcoreapp2.1\ZTxLib.NETCore.AssemblyInfoInputs.cache
+E:\..NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore\obj\Release\netcoreapp2.1\ZTxLib.NETCore.AssemblyInfo.cs
+E:\..NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore\obj\Release\netcoreapp2.1\ZTxLib.NETCore.dll
+E:\..NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore\obj\Release\netcoreapp2.1\ZTxLib.NETCore.pdb
+E:\..NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore\obj\Release\netcoreapp2.1\ZTxLib.NETCore.csprojAssemblyReference.cache
