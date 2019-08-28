@@ -8,7 +8,9 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Package Description</description>
     <dependencies>
-      <group targetFramework=".NETCoreApp2.1" />
+      <group targetFramework=".NETCoreApp2.1">
+        <dependency id="System.Management" version="4.5.0" exclude="Build,Analyzers" />
+      </group>
     </dependencies>
   </metadata>
   <files>

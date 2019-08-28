@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZTxLib.NETCore", "ZTxLib.NETCore\ZTxLib.NETCore.csproj", "{C11990B7-1E26-45AF-BDD1-B17A1F697C0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZTxLib.NETCore.Database", "ZTxLib.NETCore.Database\ZTxLib.NETCore.Database.csproj", "{837B9FAE-21D3-4CDE-9E0F-5BFD929914A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZTxLib.NETCore.Database", "ZTxLib.NETCore.Database\ZTxLib.NETCore.Database.csproj", "{837B9FAE-21D3-4CDE-9E0F-5BFD929914A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZTxLib.NETCore.Drawing", "ZTxLib.NETCore.Drawing\ZTxLib.NETCore.Drawing.csproj", "{5AA53A70-3D4D-44B3-A618-AFDCC4186E66}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{837B9FAE-21D3-4CDE-9E0F-5BFD929914A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{837B9FAE-21D3-4CDE-9E0F-5BFD929914A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{837B9FAE-21D3-4CDE-9E0F-5BFD929914A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AA53A70-3D4D-44B3-A618-AFDCC4186E66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AA53A70-3D4D-44B3-A618-AFDCC4186E66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AA53A70-3D4D-44B3-A618-AFDCC4186E66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AA53A70-3D4D-44B3-A618-AFDCC4186E66}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

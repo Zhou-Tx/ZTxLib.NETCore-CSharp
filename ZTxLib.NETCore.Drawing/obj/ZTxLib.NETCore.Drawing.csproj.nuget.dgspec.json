@@ -1,0 +1,65 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\..NET\\DLL\\ZTxLib.NETCore\\ZTxLib.NETCore.Drawing\\ZTxLib.NETCore.Drawing.csproj": {}
+  },
+  "projects": {
+    "E:\\..NET\\DLL\\ZTxLib.NETCore\\ZTxLib.NETCore.Drawing\\ZTxLib.NETCore.Drawing.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\..NET\\DLL\\ZTxLib.NETCore\\ZTxLib.NETCore.Drawing\\ZTxLib.NETCore.Drawing.csproj",
+        "projectName": "ZTxLib.NETCore.Drawing",
+        "projectPath": "E:\\..NET\\DLL\\ZTxLib.NETCore\\ZTxLib.NETCore.Drawing\\ZTxLib.NETCore.Drawing.csproj",
+        "packagesPath": "C:\\Users\\Zhou Tianxing\\.nuget\\packages\\",
+        "outputPath": "E:\\..NET\\DLL\\ZTxLib.NETCore\\ZTxLib.NETCore.Drawing\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Zhou Tianxing\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "E:\\..NET\\DLL\\ZTxLib.NETCore\\publish": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Gma.QrCodeNet.Core": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
