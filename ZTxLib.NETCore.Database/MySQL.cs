@@ -1,5 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
-using System.Collections.Generic;
+using System.Data.SqlClient;
 
 namespace ZTxLib.NETCore.Database
 {
@@ -10,13 +10,13 @@ namespace ZTxLib.NETCore.Database
             private readonly MySqlDataReader reader;
             public MySqlReader(MySqlDataReader reader) => this.reader = reader;
             public bool Read() => reader.Read();
+            public void Close() => reader.Close();
+            public bool IsClosed => reader.IsClosed;
             public object this[int i] => reader[i];
             public object this[string s] => reader[s];
         }
 
-        private readonly List<string> sqlList = new List<string>();
         private readonly MySqlConnection conn;
-
         public MySQL(
             string server = "127.0.0.1",
             short port = 3306,
@@ -40,17 +40,49 @@ namespace ZTxLib.NETCore.Database
             try { conn.Close(); } catch { }
         }
 
-        public void Add(string sql, params object[] args) => sqlList.Add(string.Format(sql, args));
+        /// <summary>
+        /// 提交一条语句，该函数可用于查询或修改，但不可携带参数
+        /// </summary>
+        /// <param name="sql"></param>
+        /// <returns></returns>
+        public IReader Execute(string sql) => Execute(new SqlDesigner(sql));
 
-        public bool Execute()
+        /// <summary>
+        /// 提交一条语句，该函数可用于查询或修改
+        /// </summary>
+        /// <param name="sql">一条SQL语句组</param>
+        /// <returns>查询结果</returns>
+        public IReader Execute(SqlDesigner sql)
+        {
+            Close();
+            conn.Open();
+            MySqlCommand cmd = new MySqlCommand(sql.SqlStr, conn);
+            foreach (SqlParameter sqlParameter in sql.Parameters)
+                cmd.Parameters.Add(sqlParameter);
+            return new MySqlReader(cmd.ExecuteReader());
+        }
+
+        /// <summary>
+        /// 提交一项事务，该函数不可用于查询
+        /// </summary>
+        /// <param name="sqls">若干条SQL语句组</param>
+        /// <returns>成功/失败</returns>
+        public bool Execute(params SqlDesigner[] sqls)
         {
             Close();
             conn.Open();
             MySqlTransaction trans = conn.BeginTransaction();
             try
             {
-                foreach (string sql in sqlList)
-                    new MySqlCommand(sql, conn, trans).ExecuteNonQuery();
+                foreach (var sql in sqls)
+                {
+                    using (MySqlCommand cmd = new MySqlCommand(sql.SqlStr, conn, trans))
+                    {
+                        foreach (SqlParameter sqlParameter in sql.Parameters)
+                            cmd.Parameters.Add(sqlParameter);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
                 trans.Commit();
                 return true;
             }
@@ -62,17 +94,8 @@ namespace ZTxLib.NETCore.Database
             finally
             {
                 conn.Close();
-                sqlList.Clear();
             }
-        }
-
-        public IReader Execute(string sql, params object[] args)
-        {
-            Close();
-            conn.Open();
-            MySqlCommand cmd = new MySqlCommand(string.Format(sql, args), conn);
-
-            return new MySqlReader(cmd.ExecuteReader());
         }
     }
 }
+
