@@ -18,7 +18,7 @@ namespace ZTxLib.NETCore.Database
 
         private readonly MySqlConnection conn;
         public MySQL(
-            string server = "127.0.0.1",
+            string server = "localhost",
             short port = 3306,
             string user = "",
             string password = "",
