@@ -48,6 +48,10 @@
               "version": "[2.1.0, )",
               "autoReferenced": true
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.2, )"
+            },
             "System.Management": {
               "target": "Package",
               "version": "[4.5.0, )"

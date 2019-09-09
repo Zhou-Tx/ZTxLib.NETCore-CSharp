@@ -6,4 +6,3 @@ E:\..NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore\obj\Release\netcoreapp2.1\ZTxLib.NETC
 E:\..NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore\obj\Release\netcoreapp2.1\ZTxLib.NETCore.AssemblyInfo.cs
 E:\..NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore\obj\Release\netcoreapp2.1\ZTxLib.NETCore.dll
 E:\..NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore\obj\Release\netcoreapp2.1\ZTxLib.NETCore.pdb
-E:\..NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore\obj\Release\netcoreapp2.1\ZTxLib.NETCore.csprojAssemblyReference.cache
