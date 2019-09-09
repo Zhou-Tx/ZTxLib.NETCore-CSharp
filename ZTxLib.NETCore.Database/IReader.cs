@@ -1,4 +1,4 @@
-﻿namespace ZTxLib.NETCore.Database
+﻿namespace ZTxLib.Database
 {
     public interface IReader
     {
@@ -12,5 +12,6 @@
 
         object this[string s] { get; }
 
+        string ToString();
     }
 }
