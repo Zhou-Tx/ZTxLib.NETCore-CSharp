@@ -1048,11 +1048,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\..NET\\DLL\\ZTxLib.NETCore\\ZTxLib.NETCore.Drawing\\ZTxLib.NETCore.Drawing.csproj",
+      "projectUniqueName": "E:\\.NET\\DLL\\ZTxLib.NETCore\\ZTxLib.NETCore.Drawing\\ZTxLib.NETCore.Drawing.csproj",
       "projectName": "ZTxLib.NETCore.Drawing",
-      "projectPath": "E:\\..NET\\DLL\\ZTxLib.NETCore\\ZTxLib.NETCore.Drawing\\ZTxLib.NETCore.Drawing.csproj",
+      "projectPath": "E:\\.NET\\DLL\\ZTxLib.NETCore\\ZTxLib.NETCore.Drawing\\ZTxLib.NETCore.Drawing.csproj",
       "packagesPath": "C:\\Users\\Zhou Tianxing\\.nuget\\packages\\",
-      "outputPath": "E:\\..NET\\DLL\\ZTxLib.NETCore\\ZTxLib.NETCore.Drawing\\obj\\",
+      "outputPath": "E:\\.NET\\DLL\\ZTxLib.NETCore\\ZTxLib.NETCore.Drawing\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1095,10 +1095,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
