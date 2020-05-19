@@ -7,3 +7,12 @@ E:\..NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore.Drawing\bin\Release\netcoreapp2.1\ZTx
 E:\..NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore.Drawing\obj\Release\netcoreapp2.1\ZTxLib.NETCore.Drawing.dll
 E:\..NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore.Drawing\obj\Release\netcoreapp2.1\ZTxLib.NETCore.Drawing.pdb
 E:\..NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore.Drawing\obj\Release\netcoreapp2.1\ZTxLib.NETCore.Drawing.csprojAssemblyReference.cache
+D:\.NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore.Drawing\bin\Release\netcoreapp2.1\ZTxLib.NETCore.Drawing.deps.json
+D:\.NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore.Drawing\bin\Release\netcoreapp2.1\ZTxLib.NETCore.Drawing.dll
+D:\.NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore.Drawing\bin\Release\netcoreapp2.1\ZTxLib.NETCore.Drawing.pdb
+D:\.NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore.Drawing\obj\Release\netcoreapp2.1\ZTxLib.NETCore.Drawing.csprojAssemblyReference.cache
+D:\.NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore.Drawing\obj\Release\netcoreapp2.1\ZTxLib.NETCore.Drawing.csproj.CoreCompileInputs.cache
+D:\.NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore.Drawing\obj\Release\netcoreapp2.1\ZTxLib.NETCore.Drawing.AssemblyInfoInputs.cache
+D:\.NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore.Drawing\obj\Release\netcoreapp2.1\ZTxLib.NETCore.Drawing.AssemblyInfo.cs
+D:\.NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore.Drawing\obj\Release\netcoreapp2.1\ZTxLib.NETCore.Drawing.dll
+D:\.NET\DLL\ZTxLib.NETCore\ZTxLib.NETCore.Drawing\obj\Release\netcoreapp2.1\ZTxLib.NETCore.Drawing.pdb

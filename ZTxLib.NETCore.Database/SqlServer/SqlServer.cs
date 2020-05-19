@@ -1,41 +1,44 @@
 ﻿using System.Data.SqlClient;
 
-namespace ZTxLib.Database
+namespace ZTxLib.NETCore.Database.SqlServer
 {
     /// <summary>
     /// SQL Server 数据库服务器操作类
     /// </summary>
     public partial class SqlServer : IDatabase
     {
-        private readonly SqlConnection conn;
+        private readonly SqlConnection _conn;
+
         public SqlServer(
             string database,
             string server = ".",
-            string integrated_security = "SSPI") => conn =
+            string integratedSecurity = "SSPI") => _conn =
             new SqlConnection(
                 $"server={server};" +
                 $"database={database};" +
-                $"integrated security={integrated_security}"
+                $"integrated security={integratedSecurity}"
             );
-        
+
         /// <summary>
         /// 断开与数据库的连接
         /// </summary>
         public void Close()
         {
-            try { conn.Close(); } catch { }
-        }
-
-        private void Open()
-        {
-            Close();
-            conn.Open();
+            try
+            {
+                _conn.Close();
+            }
+            catch
+            {
+                // ignored
+            }
         }
 
         /// <summary>
         /// 提交一条语句，该函数可用于查询或修改，但不可携带参数
         /// </summary>
         /// <param name="sql"></param>
+        /// <param name="args"></param>
         /// <returns></returns>
         public IReader Execute(string sql, params object[] args) => Execute(new SqlCmd(sql, args));
 
@@ -47,9 +50,9 @@ namespace ZTxLib.Database
         public IReader Execute(SqlCmd sql)
         {
             Close();
-            conn.Open();
-            SqlCommand cmd = new SqlCommand(sql.SqlStr, conn);
-            for (int i = 0; i < sql.Args.Length; i++)
+            _conn.Open();
+            var cmd = new SqlCommand(sql.SqlStr, _conn);
+            for (var i = 0; i < sql.Args.Length; i++)
                 cmd.Parameters.Add(new SqlParameter($"param_{i}", sql.Args[i]));
             return new Reader(cmd.ExecuteReader());
         }
@@ -62,19 +65,20 @@ namespace ZTxLib.Database
         public bool Execute(params SqlCmd[] sqls)
         {
             Close();
-            conn.Open();
-            SqlTransaction trans = conn.BeginTransaction();
+            _conn.Open();
+            var trans = _conn.BeginTransaction();
             try
             {
-                foreach (SqlCmd sql in sqls)
+                foreach (var sql in sqls)
                 {
-                    using (SqlCommand cmd = new SqlCommand(sql.SqlStr, conn, trans))
+                    using (var cmd = new SqlCommand(sql.SqlStr, _conn, trans))
                     {
-                        for (int i = 0; i < sql.Args.Length; i++)
+                        for (var i = 0; i < sql.Args.Length; i++)
                             cmd.Parameters.Add(new SqlParameter($"param_{i}", sql.Args[i]));
                         cmd.ExecuteNonQuery();
                     }
                 }
+
                 trans.Commit();
                 return true;
             }
@@ -85,9 +89,8 @@ namespace ZTxLib.Database
             }
             finally
             {
-                conn.Close();
+                _conn.Close();
             }
         }
-
     }
 }

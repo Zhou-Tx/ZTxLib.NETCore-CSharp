@@ -1,4 +1,4 @@
-﻿namespace ZTxLib.Database
+﻿namespace ZTxLib.NETCore.Database
 {
     public class SqlCmd
     {

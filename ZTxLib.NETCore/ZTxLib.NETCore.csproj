@@ -1,7 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFrameworks>netcoreapp2.1;netcoreapp3.1</TargetFrameworks>
+    <PackageVersion>1.0.1</PackageVersion>
+    <Authors>Zhou-Tx</Authors>
+    <Company>cn.taizhou0523.dotnet</Company>
+    <RepositoryUrl>https://github.com/Zhou-Tx/ZTxLib.NETCore-CSharp</RepositoryUrl>
+    <RepositoryType>Github</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>

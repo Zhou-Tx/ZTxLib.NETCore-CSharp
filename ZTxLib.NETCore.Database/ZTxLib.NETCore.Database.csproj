@@ -1,12 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFrameworks>netcoreapp2.1;netcoreapp3.1</TargetFrameworks>
+    <PackageVersion>1.0.2</PackageVersion>
+    <Authors>Zhou-Tx</Authors>
+    <RepositoryUrl>https://github.com/Zhou-Tx/ZTxLib.NETCore-CSharp</RepositoryUrl>
+    <RepositoryType>Github</RepositoryType>
+    <Company>cn.taizhou0523.dotnet</Company>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MySql.Data" Version="8.0.17" />
-    <PackageReference Include="System.Data.SqlClient" Version="4.6.1" />
+    <PackageReference Include="MySql.Data" Version="8.0.20" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />
   </ItemGroup>
 
 </Project>
