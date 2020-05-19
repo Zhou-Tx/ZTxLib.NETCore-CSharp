@@ -1,7 +1,7 @@
 ﻿using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
 
-namespace ZTxLib.NETCore.Database.MySQL
+namespace ZTxLib.NETCore.Database.MySql
 {
     public partial class MySql : IDatabase
     {
