@@ -2,6 +2,10 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp3.1</TargetFramework>
+        <Authors>Zhou-Tx</Authors>
+        <RepositoryUrl>https://github.com/Zhou-Tx/ZTxLib.NETCore-CSharp</RepositoryUrl>
+        <RepositoryType>Github</RepositoryType>
+        <Company>cn.taizhou0523.dotnet</Company>
     </PropertyGroup>
 
     <ItemGroup>
