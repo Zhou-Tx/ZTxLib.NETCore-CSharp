@@ -37,6 +37,24 @@
         <e p="SystemInfo.cs" t="Include" />
         <e p="ZTxLib.NETCore.csproj" t="IncludeRecursive" />
       </e>
+      <e p="ZTxLib.NETCore.DaoTemplate" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="KVPair.cs" t="Include" />
+        <e p="MySQL" t="Include">
+          <e p="Dao.cs" t="Include" />
+          <e p="DataList.cs" t="Include" />
+          <e p="DataSource.cs" t="Include" />
+          <e p="IRowMapper.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Release" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="ZTxLib.NETCore.DaoTemplate.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="ZTxLib.NETCore.DaoTemplate.csproj" t="IncludeRecursive" />
+      </e>
       <e p="ZTxLib.NETCore.Database" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="IDatabase.cs" t="Include" />

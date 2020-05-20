@@ -8,7 +8,7 @@ namespace ZTxLib.NETCore.Database.MySql
         private readonly MySqlConnection _conn;
 
         public MySql(
-            string server = "localhost",
+            string host = "localhost",
             short port = 3306,
             string user = "",
             string password = "",
@@ -16,7 +16,7 @@ namespace ZTxLib.NETCore.Database.MySql
             string charset = "utf8",
             short timeout = 5) => _conn =
             new MySqlConnection(
-                $"server={server};" +
+                $"server={host};" +
                 $"port={port};" +
                 $"user={user};" +
                 $"password={password};" +

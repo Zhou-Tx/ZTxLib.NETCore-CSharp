@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZTxLib.NETCore.Database", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZTxLib.NETCore.Drawing", "ZTxLib.NETCore.Drawing\ZTxLib.NETCore.Drawing.csproj", "{5AA53A70-3D4D-44B3-A618-AFDCC4186E66}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZTxLib.NETCore.DaoTemplate", "ZTxLib.NETCore.DaoTemplate\ZTxLib.NETCore.DaoTemplate.csproj", "{49C97208-6211-4267-84DC-FCF543163DF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{5AA53A70-3D4D-44B3-A618-AFDCC4186E66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AA53A70-3D4D-44B3-A618-AFDCC4186E66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AA53A70-3D4D-44B3-A618-AFDCC4186E66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49C97208-6211-4267-84DC-FCF543163DF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49C97208-6211-4267-84DC-FCF543163DF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49C97208-6211-4267-84DC-FCF543163DF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49C97208-6211-4267-84DC-FCF543163DF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
