@@ -17,7 +17,7 @@ namespace ZTxLib.NETCore.DaoTemplate.MySQL
         internal int ExecuteNonQuery() =>
             _cmd.ExecuteNonQuery();
 
-        public void Prepare(string sql,
+        public Dao Prepare(string sql,
             IEnumerable<KvPair> parameter = null,
             IEnumerable<KvPair> concat = null
         )
@@ -45,6 +45,7 @@ namespace ZTxLib.NETCore.DaoTemplate.MySQL
                 ));
 
             _cmd = cmd;
+            return this;
         }
 
         internal void Close() => _dataSource.Close();
