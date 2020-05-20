@@ -7,24 +7,19 @@ namespace ZTxLib.NETCore.DaoTemplate.MySQL
     public class Dao
     {
         private readonly DataSource _dataSource;
+        private MySqlCommand _cmd;
 
         public Dao(DataSource dataSource) => _dataSource = dataSource;
 
-        public MySqlDataReader ExecuteReader(
-            string sql,
-            IEnumerable<KvPair> parameter = null,
-            IEnumerable<KvPair> concat = null) =>
-            Prepare(sql, parameter, concat).ExecuteReader();
+        internal MySqlDataReader ExecuteReader() =>
+            _cmd.ExecuteReader();
 
-        public int ExecuteNonQuery(
-            string sql,
-            IEnumerable<KvPair> parameter = null,
-            IEnumerable<KvPair> concat = null) =>
-            Prepare(sql, parameter, concat).ExecuteNonQuery();
+        internal int ExecuteNonQuery() =>
+            _cmd.ExecuteNonQuery();
 
-        private MySqlCommand Prepare(string sql,
-            IEnumerable<KvPair> parameter,
-            IEnumerable<KvPair> concat
+        public void Prepare(string sql,
+            IEnumerable<KvPair> parameter = null,
+            IEnumerable<KvPair> concat = null
         )
         {
             var concatArray = (concat == null)
@@ -49,7 +44,9 @@ namespace ZTxLib.NETCore.DaoTemplate.MySQL
                     $"@{sqlParameter.Key}", sqlParameter.Value
                 ));
 
-            return cmd;
+            _cmd = cmd;
         }
+
+        internal void Close() => _dataSource.Close();
     }
 }

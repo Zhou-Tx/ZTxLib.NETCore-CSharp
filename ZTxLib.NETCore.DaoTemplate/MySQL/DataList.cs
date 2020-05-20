@@ -8,14 +8,16 @@ namespace ZTxLib.NETCore.DaoTemplate.MySQL
     {
         private readonly List<T> _list = new List<T>();
 
-        public DataList(IRowMapper<T> mapper, MySqlDataReader reader)
+        public DataList(IRowMapper<T> mapper, Dao dao)
         {
+            var reader = dao.ExecuteReader();
             var index = 0;
             while (reader.Read())
             {
                 _list.Add(mapper.MapRow(reader, index));
                 index++;
             }
+            dao.Close();
         }
 
         public IEnumerator<T> GetEnumerator() => _list.GetEnumerator();

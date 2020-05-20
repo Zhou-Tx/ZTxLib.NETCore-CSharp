@@ -12,6 +12,8 @@ namespace ZTxLib.NETCore.DaoTemplate.MySQL
         private string Charset { get; }
         private short Timeout { get; }
 
+        private MySqlConnection _conn;
+
         public DataSource(
             string host,
             short port,
@@ -32,7 +34,7 @@ namespace ZTxLib.NETCore.DaoTemplate.MySQL
 
         internal MySqlConnection GetConnection()
         {
-            var conn = new MySqlConnection(
+            _conn = new MySqlConnection(
                 $"server={Host};" +
                 $"port={Port};" +
                 $"user={User};" +
@@ -41,8 +43,10 @@ namespace ZTxLib.NETCore.DaoTemplate.MySQL
                 $"charset={Charset};" +
                 $"connect Timeout={Timeout}"
             );
-            conn.Open();
-            return conn;
+            _conn.Open();
+            return _conn;
         }
+
+        internal void Close() => _conn.Close();
     }
 }
