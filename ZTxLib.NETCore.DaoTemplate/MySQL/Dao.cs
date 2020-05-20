@@ -16,7 +16,7 @@ namespace ZTxLib.NETCore.DaoTemplate.MySQL
             IEnumerable<KvPair> concat = null) =>
             Prepare(sql, parameter, concat).ExecuteReader();
 
-        public void ExecuteNonQuery(
+        public int ExecuteNonQuery(
             string sql,
             IEnumerable<KvPair> parameter = null,
             IEnumerable<KvPair> concat = null) =>
